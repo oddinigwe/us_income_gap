@@ -34,11 +34,6 @@ The Bureau of Labor Statistics (BLS) is a Federal government agency and everythi
 
 This dataset has been converted to CSV
 
-## AUTHOR'S NAME AND CONTACT
-
-Oddinigwe Onyemenem - oddinigwe@gmail.com
-
-
 ## CONTENT
 
 ### Fields in the dataset:
@@ -223,6 +218,9 @@ sns.jointplot(x="All_weekly", y="Gap", data=df, size=8)
 
 This depicts the widening income gaps for both males and females across all industries
 
+## AUTHOR'S NAME AND CONTACT
+
+Oddinigwe Onyemenem - oddinigwe@gmail.com
 
 
 
