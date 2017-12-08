@@ -2,15 +2,17 @@
 
 ## SEMESTER AND CLASS TITLE
 
-Fall 2017, DATA 550 Data Visualization by Dr. Bora Pajo
+Fall 2017, DATA 550 Data Visualization - Dr. Bora Pajo
 
-## DESCRIPTION
+## DESCRIPTION 
 
-Many people say the gender gap in income levels is overstated in the United States, where some say that inequality in the labor force is a thing of the past. Is there a gender gap at all? Is it stronger in some industries than in others?
+The gender pay gap in the United States is the ratio of female-to-male median yearly earnings among full-time, year-round workers. While many believe that the gender gap is overstated in the United States. This analysis attempts to show if the gender gap does exist accross various industries. The extent to which discrimination plays a role in explaining gender wage disparities is somewhat difficult to quantify, due to a number of potentially confounding variables. Analysis thus far has found that there is indeed a sizable gender gap between male and female incomes.
+
+## ABOUT THE DATA
 
 This dataset, retrieved from the Bureau of Labor Statistics, shows the median weekly incomes for 535 different occupations. The data encompasses information for all working American citizens as of January 2015. The incomes are broken into male and female statistics, preceded by the total median income when including both genders. The data has been re-formatted from the original PDF-friendly arrangement to make it easier to clean and analyze.
 
-Analysis thus far has found that there is indeed a sizable gender gap between male and female incomes. Use of this dataset should cite the Bureau of Labor Statistics as per their copyright information:
+ 
 
 
 Using pandas, seaborn, and matplotlib 
