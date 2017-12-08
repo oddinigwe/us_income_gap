@@ -82,9 +82,33 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 ```
 ```
-# Next, we'll load the dataset, which is in the specified directory below
-cereal = pd.read_csv("C:\\Users\\oddin\\Documents\\projects\\project2\\cereal.csv")
+# Next, load the data and add some relevant features such as:
+# the wage ratio, gap and share of each genders (or sexes) in the field
 
+# Load the data
+df = pd.read_csv('C:\\Users\\oddin\\Desktop\\US_Income\\inc_occ_gender.csv')
+
+# Create dataframes for relevant features to use in the analysis and visualization
+df = df[~(df.M_weekly == 'Na')]
+df = df[~(df.F_weekly == 'Na')]
+       
+df['M_weekly'] = df.M_weekly.apply(lambda x: int(x))
+df['F_weekly'] = df.F_weekly.apply(lambda x: int(x))
+df['M_workers'] = df.M_workers.apply(lambda x: int(x))
+df['F_workers'] = df.F_workers.apply(lambda x: int(x))
+df['All_weekly'] = df.All_weekly.apply(lambda x: int(x))
+df['All_workers'] = df.All_workers.apply(lambda x: int(x))
+df['M_share'] = df.M_workers/df.All_workers 
+df['F_share'] = df.F_workers/df.All_workers 
+df['non_weighted_all_weekly'] = (df.M_weekly + df.F_weekly)/2
+df['Gap'] = df.M_weekly - df.F_weekly
+df['Ratio'] = df.F_weekly/df.M_weekly
+df['Ratio_of_workers'] = df.F_workers/df.M_workers
+
+df = df.reset_index(drop = True)
+
+# Show the first 15 rows of the dataset
+df.head(15)
 
 ```
 
