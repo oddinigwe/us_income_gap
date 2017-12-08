@@ -64,22 +64,51 @@ F_weekly: Median weekly income for female workers, in USD.
 ## INPUTS AND OUTPUTS
 
 ```
+#LOAD ALL APPLICABLE TOOLS
+
 #to enable visualizations 
 %matplotlib inline
-
-# First, import pandas, a useful data analysis tool especially when working with labeled data
-import pandas as pd
-
-# import seaborn, visualization library in python 
-import warnings # current version of seaborn generates a bunch of warnings that we'll ignore
-warnings.filterwarnings("ignore")
-import seaborn as sns
+# linear algebra
+import numpy as np 
+# data processing, CSV file I/O 
+import pandas as pd 
 import matplotlib.pyplot as plt
-sns.set(style="white", color_codes=True)
+#Python visualization library for statistical data visualization 
+import seaborn as sns
+plt.style.use('fivethirtyeight')
+from subprocess import check_output
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+```
+```
+# Next, load the data and add some relevant features such as:
+# the wage ratio, gap and share of each genders (or sexes) in the field
 
-# Next, we'll load the cereal dataset, which is in the specified directory below
-cereal = pd.read_csv("C:\\Users\\oddin\\Documents\\projects\\project2\\cereal.csv")
+# Load the data
+df = pd.read_csv('C:\\Users\\oddin\\Desktop\\US_Income\\inc_occ_gender.csv')
 
+# Create dataframes for relevant features to use in the analysis and visualization
+df = df[~(df.M_weekly == 'Na')]
+df = df[~(df.F_weekly == 'Na')]
+       
+df['M_weekly'] = df.M_weekly.apply(lambda x: int(x))
+df['F_weekly'] = df.F_weekly.apply(lambda x: int(x))
+df['M_workers'] = df.M_workers.apply(lambda x: int(x))
+df['F_workers'] = df.F_workers.apply(lambda x: int(x))
+df['All_weekly'] = df.All_weekly.apply(lambda x: int(x))
+df['All_workers'] = df.All_workers.apply(lambda x: int(x))
+df['M_share'] = df.M_workers/df.All_workers 
+df['F_share'] = df.F_workers/df.All_workers 
+df['non_weighted_all_weekly'] = (df.M_weekly + df.F_weekly)/2
+df['Gap'] = df.M_weekly - df.F_weekly
+df['Ratio'] = df.F_weekly/df.M_weekly
+df['Ratio_of_workers'] = df.F_workers/df.M_workers
+
+df = df.reset_index(drop = True)
+
+# Show the first 15 rows of the dataset
+df.head(15)
 
 ```
 
