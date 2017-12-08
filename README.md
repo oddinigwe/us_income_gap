@@ -64,20 +64,25 @@ F_weekly: Median weekly income for female workers, in USD.
 ## INPUTS AND OUTPUTS
 
 ```
+#LOAD ALL APPLICABLE TOOLS
+
 #to enable visualizations 
 %matplotlib inline
-
-# First, import pandas, a useful data analysis tool especially when working with labeled data
-import pandas as pd
-
-# import seaborn, visualization library in python 
-import warnings # current version of seaborn generates a bunch of warnings that we'll ignore
-warnings.filterwarnings("ignore")
-import seaborn as sns
+# linear algebra
+import numpy as np 
+# data processing, CSV file I/O 
+import pandas as pd 
 import matplotlib.pyplot as plt
-sns.set(style="white", color_codes=True)
-
-# Next, we'll load the cereal dataset, which is in the specified directory below
+#Python visualization library for statistical data visualization 
+import seaborn as sns
+plt.style.use('fivethirtyeight')
+from subprocess import check_output
+from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+```
+```
+# Next, we'll load the dataset, which is in the specified directory below
 cereal = pd.read_csv("C:\\Users\\oddin\\Documents\\projects\\project2\\cereal.csv")
 
 
