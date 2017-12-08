@@ -221,7 +221,6 @@ sns.jointplot(x="All_weekly", y="Gap", data=df, size=8)
 ```
 ![GitHub Logo](output7.PNG)
 
-```
 This depicts the widening income gaps for both males and females across all industries
 
 
