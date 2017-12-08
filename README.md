@@ -210,6 +210,7 @@ This jointplot shows a linear correlation for MALES with regards to higher salar
 #Two kinds of distribution in one visualization i.e. bivariate scatterplots and univariate histograms 
 sns.jointplot(x="All_weekly", y="F_share", data=df, size=8)
 ```
+```
 ![GitHub Logo](output6.PNG)
 
 This jointplot does not show a linear correlation for FEMALES. It depicts an inverse relationship at the higher salaries for FEMALES
