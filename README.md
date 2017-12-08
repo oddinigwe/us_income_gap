@@ -125,6 +125,66 @@ plt.title('Job Types',fontsize=20)
 plt.xlabel('Counts',fontsize=16)
 plt.ylabel('Job Types',fontsize=16)
 ```
-![GitHub Logo](firstrows.PNG)
+![GitHub Logo](countsviz.PNG)
 
 ```
+#To create a pie chart showing all the job types for all genders
+fig,ax = plt.subplots(figsize=(9,9))
+df['Job_Types'].value_counts(sort=False).plot(kind='pie')
+plt.title('Job Types for Both Males and Females',fontsize=20)
+```
+![GitHub Logo](output1.PNG)
+
+```
+# To show the distribution of the wage gap:
+sns.distplot(df.Ratio, bins = np.linspace(0.4,1.2,28))
+plt.title('Median Income Ratio Distribution')
+np.mean(df.Ratio)
+```
+![GitHub Logo](output2.PNG)
+
+```
+# To show the income gap at higher salaries using the female/male wage ratio and non weighted weekly salary
+plt.plot(df.non_weighted_all_weekly, df.Ratio,'o',markersize = 10, alpha = 0.8)
+plt.xlabel('Non Weighted Weekly Salary [$]')
+plt.ylabel('Female/Male Wage Ratio')
+plt.title('Wider Income Gap at Higher Salaries')
+
+x = df.non_weighted_all_weekly
+y = df.Ratio
+fn = np.polyfit(x,y,1)
+fit_fn = np.poly1d(fn) 
+plt.plot(x,fit_fn(x))
+```
+![GitHub Logo](output3.PNG)
+
+```
+# Creating a basic regression model to understand the importance of the different features.
+# First, use salaries of males and females as a function of the non-normalized field salary:
+# i.e. the average of the males and females median salary:
+
+plt.plot(df.non_weighted_all_weekly, df.M_weekly,'o')
+plt.plot(df.non_weighted_all_weekly, df.F_weekly,'o')
+plt.legend(['Males','Females'])
+plt.xlabel('Field Median Salary')
+plt.ylabel('Salary')
+plt.show()
+```
+![GitHub Logo](output4.PNG)
+
+```
+#Use the seaborn library to create seaborn jointplot
+#Two kinds of distribution in one visualization i.e. bivariate scatterplots and univariate histograms 
+sns.jointplot(x="All_weekly", y="M_share", data=df, size=8)
+```
+![GitHub Logo](output5.PNG)
+
+```
+#Use the seaborn library to create seaborn jointplot
+#Two kinds of distribution in one visualization i.e. bivariate scatterplots and univariate histograms 
+sns.jointplot(x="All_weekly", y="F_share", data=df, size=8)
+```
+![GitHub Logo](output6.PNG)
+
+```
+
