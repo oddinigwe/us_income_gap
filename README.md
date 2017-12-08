@@ -39,3 +39,21 @@ Oddinigwe Onyemenem - oddinigwe@gmail.com
 
 ### Fields in the dataset:
 
+Median weekly earnings of full-time wage and salary workers by detailed occupation and sex.
+
+Occupation: Job title as given from BLS. Industry summaries are given in ALL CAPS.
+
+All_workers: Number of workers male and female, in thousands.
+
+All_weekly: Median weekly income including male and female workers, in USD.
+
+M_workers: Number of male workers, in thousands.
+
+M_weekly: Median weekly income for male workers, in USD.
+
+F_workers: Number of female workers, in thousands.
+
+F_weekly: Median weekly income for female workers, in USD.
+
+
+
