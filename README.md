@@ -114,6 +114,8 @@ df.head(15)
 ```
 # to count the frequency of values for job types
 df["Job_Types"].value_counts()
+
+# COUNTS OUTPUT
 Office Workers         18
 Management             17
 Business               13
