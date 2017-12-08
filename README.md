@@ -109,13 +109,13 @@ df = df.reset_index(drop = True)
 df.head(15)
 
 ```
-![GitHub Logo](firstrows.png)
+![GitHub Logo](firstrows.PNG)
 
 ```
 # to count the frequency of values for job types
 df["Job_Types"].value_counts()
 ```
-![GitHub Logo](counts.png)
+![GitHub Logo](counts.PNG)
 
 ```
 #To create a bar chart showing counts for the job types 
@@ -125,6 +125,6 @@ plt.title('Job Types',fontsize=20)
 plt.xlabel('Counts',fontsize=16)
 plt.ylabel('Job Types',fontsize=16)
 ```
-![GitHub Logo](firstrows.png)
+![GitHub Logo](firstrows.PNG)
 
 ```
