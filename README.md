@@ -114,9 +114,31 @@ df.head(15)
 ```
 # to count the frequency of values for job types
 df["Job_Types"].value_counts()
+Office Workers         18
+Management             17
+Business               13
+Production workers     12
+Sales                  12
+Health Professional     8
+I.T.                    8
+Culinary                8
+Transportation          5
+Education               5
+Social Services         4
+Science                 4
+General Service         4
+Protective Services     4
+Grounds-keeping         4
+Arts                    4
+Engineering             3
+Legal Services          2
+Healthcare Support      2
+Agriculture             2
+Maintenance             1
+All                     1
+Construction            1
+Name: Job_Types, dtype: int64
 ```
-![GitHub Logo](counts.PNG)
-
 ```
 #To create a bar chart showing counts for the job types 
 fig,ax = plt.subplots(figsize=(12,12))
