@@ -12,6 +12,12 @@ A 2010 research review by the majority staff of the United States Congress Joint
 
 Analysis thus far has found that there is indeed a sizable gender gap between male and female incomes.
 
+![GitHub Logo](US_Gender_pay_gap_by_state.png)
+
+Figure: Women's earnings as a percentage of men's earnings, by state and Puerto Rico, 2007. Data from the Income, Earnings, and Poverty Data From the 2007 American Community Survey.
+
+Source: US Census Bureau
+
 ## ABOUT THE DATA
 
 This dataset, retrieved from the Bureau of Labor Statistics, shows the median weekly incomes for 535 different occupations. The data encompasses information for all working American citizens as of January 2015. The incomes are broken into male and female statistics, preceded by the total median income when including both genders. The data has been re-formatted from the original PDF-friendly arrangement to make it easier to clean and analyze.
@@ -33,7 +39,7 @@ This dataset has been converted to CSV
 Oddinigwe Onyemenem - oddinigwe@gmail.com
 
 
-![GitHub Logo](US_Gender_pay_gap_by_state.png)
+
 
 ## CONTENT
 
@@ -74,7 +80,6 @@ sns.set(style="white", color_codes=True)
 # Next, we'll load the cereal dataset, which is in the specified directory below
 cereal = pd.read_csv("C:\\Users\\oddin\\Documents\\projects\\project2\\cereal.csv")
 
-# Next, display the first 20 rows and all columns of the iris dataframe, good way to see the colum headings for the dataset
-cereal.head(20)
+
 ```
 
