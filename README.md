@@ -203,8 +203,7 @@ sns.jointplot(x="All_weekly", y="M_share", data=df, size=8)
 ```
 ![GitHub Logo](output5.PNG)
 
-```
-The first jointplot shows a linear correlation for MALES with regards to higher salaries. There is an increase at higher salary levels
+This jointplot shows a linear correlation for MALES with regards to higher salaries. There is an increase at higher salary levels
 ```
 ```
 #Use the seaborn library to create seaborn jointplot
@@ -213,8 +212,7 @@ sns.jointplot(x="All_weekly", y="F_share", data=df, size=8)
 ```
 ![GitHub Logo](output6.PNG)
 
-```
-The second jointplot does not show a linear correlation for FEMALES. It depicts an inverse relationship at the higher salaries for FEMALES
+This jointplot does not show a linear correlation for FEMALES. It depicts an inverse relationship at the higher salaries for FEMALES
 ```
 #Use the seaborn library to create seaborn jointplot
 #Two kinds of distribution in one visualization i.e. bivariate scatterplots and univariate histograms 
