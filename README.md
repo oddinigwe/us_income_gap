@@ -187,4 +187,11 @@ sns.jointplot(x="All_weekly", y="F_share", data=df, size=8)
 ![GitHub Logo](output6.PNG)
 
 ```
+#Use the seaborn library to create seaborn jointplot
+#Two kinds of distribution in one visualization i.e. bivariate scatterplots and univariate histograms 
+sns.jointplot(x="All_weekly", y="Gap", data=df, size=8)
+```
+![GitHub Logo](output7.PNG)
+
+
 
