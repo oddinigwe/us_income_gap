@@ -74,7 +74,6 @@ sns.set(style="white", color_codes=True)
 # Next, we'll load the cereal dataset, which is in the specified directory below
 cereal = pd.read_csv("C:\\Users\\oddin\\Documents\\projects\\project2\\cereal.csv")
 
-# Next, display the first 20 rows and all columns of the iris dataframe, good way to see the colum headings for the dataset
-cereal.head(20)
+
 ```
 
