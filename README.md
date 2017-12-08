@@ -14,6 +14,9 @@ Analysis thus far has found that there is indeed a sizable gender gap between ma
 
 ![GitHub Logo](US_Gender_pay_gap_by_state.png)
 
+Figure: Women's earnings as a percentage of men's earnings, by state and Puerto Rico, 2007. Data from the Income, Earnings, and Poverty Data From the 2007 American Community Survey.[10]
+Source: US Census Bureau
+
 ## ABOUT THE DATA
 
 This dataset, retrieved from the Bureau of Labor Statistics, shows the median weekly incomes for 535 different occupations. The data encompasses information for all working American citizens as of January 2015. The incomes are broken into male and female statistics, preceded by the total median income when including both genders. The data has been re-formatted from the original PDF-friendly arrangement to make it easier to clean and analyze.
