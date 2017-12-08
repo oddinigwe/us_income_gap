@@ -39,8 +39,6 @@ This dataset has been converted to CSV
 Oddinigwe Onyemenem - oddinigwe@gmail.com
 
 
-
-
 ## CONTENT
 
 ### Fields in the dataset:
@@ -111,4 +109,22 @@ df = df.reset_index(drop = True)
 df.head(15)
 
 ```
+![GitHub Logo](firstrows.png)
 
+```
+# to count the frequency of values for job types
+df["Job_Types"].value_counts()
+```
+![GitHub Logo](counts.png)
+
+```
+#To create a bar chart showing counts for the job types 
+fig,ax = plt.subplots(figsize=(12,12))
+df['Job_Types'].value_counts(sort=False).plot(kind='barh')
+plt.title('Job Types',fontsize=20)
+plt.xlabel('Counts',fontsize=16)
+plt.ylabel('Job Types',fontsize=16)
+```
+![GitHub Logo](firstrows.png)
+
+```
