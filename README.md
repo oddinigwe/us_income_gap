@@ -218,6 +218,10 @@ sns.jointplot(x="All_weekly", y="Gap", data=df, size=8)
 
 This depicts the widening income gaps for both males and females across all industries
 
+# CONCLUSION
+
+This analysis barely sctraches the surface of this ongoinng pertinent issue and further continuous research is recommended. 
+
 ## AUTHOR'S NAME AND CONTACT
 
 Oddinigwe Onyemenem - oddinigwe@gmail.com
