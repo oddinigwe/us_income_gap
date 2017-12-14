@@ -6,7 +6,7 @@ Fall 2017, DATA 550 Data Visualization - Dr. Bora Pajo
 
 ## DESCRIPTION AND CONTEXT
 
-The gender pay gap in the United States is the ratio of female-to-male median yearly earnings among full-time, year-round workers. While many believe that the gender gap is overstated in the United States. This analysis attempts to show if the gender gap does exist accross various industries. The extent to which discrimination plays a role in explaining gender wage disparities is somewhat difficult to quantify, due to a number of potentially confounding variables. 
+The gender income gap in the United States is the ratio of female-to-male median yearly earnings among full-time, year-round workers. While many believe that the gender gap is overstated in the United States. This analysis attempts to show if the gender gap does exist accross various industries. The extent to which discrimination plays a role in explaining gender wage disparities is somewhat difficult to quantify, due to a number of potentially confounding variables. 
 
 A 2010 research review by the majority staff of the United States Congress Joint Economic Committee reported that studies have consistently found unexplained pay differences even after controlling for measurable factors that are assumed to influence earnings – suggestive of unknown/unmeasurable contributing factors of which gender discrimination may be one.[7] Other studies have found direct evidence of discrimination – for example, more jobs went to women when the applicant's sex was unknown during the hiring process.
 
