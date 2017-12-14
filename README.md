@@ -1,4 +1,10 @@
+# GENDER INCOME GAPS IN THE UNITED STATES
 
+## SEMESTER AND CLASS TITLE
+
+Fall 2017, DATA 550 Data Visualization - Dr. Bora Pajo
+
+## DESCRIPTION AND CONTEXT
 
 The gender pay gap in the United States is the ratio of female-to-male median yearly earnings among full-time, year-round workers. While many believe that the gender gap is overstated in the United States. This analysis attempts to show if the gender gap does exist accross various industries. The extent to which discrimination plays a role in explaining gender wage disparities is somewhat difficult to quantify, due to a number of potentially confounding variables. 
 
